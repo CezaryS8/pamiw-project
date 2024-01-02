@@ -48,7 +48,7 @@ const UserForm = () => {
           id="name"
           name="name"
           type="text"
-          onChange="handleChange"
+          onChange={handleChange}
           required={true}
           value={formData.name}
           className="m-2 bg-slate-400 rounded"
@@ -58,17 +58,17 @@ const UserForm = () => {
           id="email"
           name="email"
           type="text"
-          onChange="handleChange"
+          onChange={handleChange}
           required={true}
           value={formData.email}
           className="m-2 bg-slate-400 rounded"
         />
-        <label>Email</label>
+        <label>Password</label>
         <input
           id="password"
           name="password"
           type="password"
-          onChange="handleChange"
+          onChange={handleChange}
           required={true}
           value={formData.password}
           className="m-2 bg-slate-400 rounded"
